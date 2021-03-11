@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Hyunsoo's Portfolio</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a class="nav-link" href="#header">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-title">
+        <h1 data-aos="fade-down">
+          <span class="highlight"
+            > I am&nbsp;&nbsp;<span class="bracket">{</span> 'Hyunsoo Jeon' <span class="bracket">}</span> &nbsp;&&&nbsp; <br>Software <span class="bracket">[</span> 'Engineer' <span class="bracket">]</span></span
+          >
+        </h1>
+        <br />
+        <h2 id="smallTitle" data-aos="fade-right">console.log(' <span>the passionate Engineer</span> ');</h2>
+        <button class="btn-text btn-scroll-to" data-aos="fade-up"> MORE <i class="fas fa-arrow-down"></i></button>
+      </div>
+    </header>
+
+    <section class="section" id="about-me" data-aos="fade-down">
+      <div class="section-title" data-aos="fade-right" data-aos-delay="1000">
+        <h2 class="section-description"><span>const</span> about_me = </h2>
+        <h3 class="section-header">Hi.there.My_name_is_('Hyunsoo Jeon');</h3>
+        <p id="section-content">
+          A San jose, California based software engineer.<br>
+          <span>"I am a multi-talented human fueled by high energy levels and deep concentration."</span>
+
+        </p>
+      </div>
+
+      <div class="about-features" data-aos="fade-up" data-aos-delay="1300">
+        <div class="slider">
+          <div class="slide slide-1">
+            <div class="my-images">
+              <img
+                src="image/hyunsoo1.jpeg"
+                alt=""
+                class="my-photo"
+              />
+
+            </div>
+          </div>
+
+          <div class="slide slide-2">
+            <div class="my-images">
+              <img
+                src="image/hyunsoo2.jpeg"
+                alt=""
+                class="my-photo"
+              />
+            </div>
+          </div>
+
+          <div class="slide slide-3">
+            <div class="my-images">
+              <img
+                src="image/hyunsoo3.jpeg"
+                alt=""
+                class="my-photo"
+              />
+            </div>
+          </div>
+
+          <div class="slide slide-4">
+            <div class="my-images">
+              <img
+                src="image/hyunsoo4.jpeg"
+                alt=""
+                class="my-photo"
+              />
+            </div>
+          </div>
+
+          <div class="slide slide-5">
+            <div class="my-images">
+              <img
+                src="image/hyunsoo5.jpeg"
+                alt=""
+                class="my-photo"
+              />
+            </div>
+          </div>
+
+          <button class="slider-btn slider-btn-left">&larr;</button>
+          <button class="slider-btn slider-btn-right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-title">
+        <h2 class="section-description" data-aos="zoom-in-right"><span>let</span> projects = </h2>
+        <h3 class="section-header" data-aos="zoom-in-left">
+          projects.forEach(p => p.classList.add('<span>hot_projects</span>'));</h3>
+      </div>
+
+      <div class="projects" data-aos="fade-in" data-aos-delay="450">
+        <div class="projects-tab-container">
+          <button
+            class="btn projects-tab projects-tab-1 projects-tab-active"
+            data-tab="1"
+          >
+            <span>01</span>Limited Shoes
+          </button>
+          <button class="btn projects-tab projects-tab-2" data-tab="2">
+            <span>02</span>Drag and Drop
+          </button>
+          <button class="btn projects-tab projects-tab-3" data-tab="3">
+            <span>03</span>Infinity Scroll
+          </button>
+          <button class="btn projects-tab projects-tab-4" data-tab="4">
+            <span>04</span>Music Player
+          </button>
+          <button class="btn projects-tab projects-tab-5" data-tab="5">
+            <span>05</span>Nasa API
+          </button>
+          <button class="btn projects-tab projects-tab-6" data-tab="6">
+            <span>06</span>Joke Teller API
+          </button>
+        </div>
+
+        <div
+          class="projects-content projects-content-1 projects-content-active"
+        >
+          <img src="./image/limitedshoe.png" alt="" class="projects-imgs"/>
+          <p class="projects-texts">
+            A React fully functioning full-stack E-Commerce with mobile friendly application<br>
+            It has client side page to puchase and process payment with PayPal.<br>
+            In the admin page, It could handle users, products, and payment methods.
+            <br>Each of product has reviews, qty process with easy to process buttons.<br> 
+            in the backend, established with MongoDb, using MongoDB atlas to handle user, cart items, and products. 
+            <a href="https://limitshoeapp.herokuapp.com/" target="_blank"><i class="fas fa-laptop"></i>&nbsp;&nbsp;DEMO</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hsprime85/reactEcommerceProject"target="_blank"><i class="fab fa-github"></i>&nbsp;&nbsp;CODE </a>
+          </p>
+        </div>
+
+        <div class="projects-content projects-content-2">
+          <img src="./image/draganddrop.gif" alt="" class="projects-imgs"/>
+          <p class="projects-texts">
+            Built a Drag and Drop process board with Javascript : <br>
+            Each column moves to another box and place in it, and it can be delete and edit. <br>
+            Adding item is so easy for user. Everydata saves in localstorage to prevent lost data.<br>
+            <a href="https://hsprime85.github.io/JS_DragAndDrop_Project/" target="_blank"><i class="fas fa-laptop"></i>&nbsp;&nbsp;DEMO</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/hsprime85/JS_DragAndDrop_Project" target="_blank"><i class="fab fa-github"></i>&nbsp;&nbsp;CODE</a>
+          </p>
+        </div>
+
+        <div class="projects-content projects-content-3">
+          <img src="./image/infinityscroll.gif" alt="" class="projects-imgs"/>
+          <p class="projects-texts">
+            Splash API infinite scroll app :<br>
+            Using splash web API, calls HD images, keep load images with infinite scrolls.<br> Each of time it brings 10 images.<br> 
+            Click the image to connect splash website for finding another options of the image.
+            <br>
+
+            <a href="https://hsprime85.github.io/JS_infinityScroll_project/" target="_blank"><i class="fas fa-laptop"></i>&nbsp;&nbsp;DEMO</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hsprime85/JS_infinityScroll_project" target="_blank"><i class="fab fa-github"></i>&nbsp;&nbsp;CODE</a>
+          </p>
+      </div>
+
+      <div class="projects-content projects-content-4">
+        <img src="./image/musicplayer.gif" alt="" class="projects-imgs"/>
+        <p class="projects-texts">
+          Music player app :<br>
+          It shows song image, title, artist. It shows song time with drag and play progress bar.<br>
+          Functioning 3 buttons with previous-song, play, pause and next-song. <br>   
+          <a href="https://hsprime85.github.io/JS_musicPlayer_project/" target="_blank"><i class="fas fa-laptop"></i>&nbsp;&nbsp;DEMO</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/hsprime85/JS_musicPlayer_project" target="_blank"><i class="fab fa-github"></i>&nbsp;&nbsp;CODE</a>
+        </p>
+    </div>
+
+    <div class="projects-content projects-content-5">
+      <img src="./image/nasaapi.gif" alt="" class="projects-imgs"/>
+      <p class="projects-texts">
+        NASA API app :<br>
+        Calling data from NASA API. It calls data randomly with image, article of title, author, date, and article. <br>
+        Each of content has 'Add to Favorite' button with 'ADDED' sign to save in favorite page.
+        In 'Add to Favorite' page, it edit each of articles with 'Remove Favorite'.<br>
+        <a href="https://hsprime85.github.io/JS_NasaAPI_project/" target="_blank"><i class="fas fa-laptop"></i>&nbsp;&nbsp;DEMO</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/hsprime85/JS_NasaAPI_project" target="_blank"><i class="fab fa-github"></i>  &nbsp;&nbsp;CODE</a>
+      </p>
+  </div>
+
+  <div class="projects-content projects-content-6">
+    <img src="./image/joketeller.gif" alt="" class="projects-imgs"/>
+    <p class="projects-texts">
+      Joke Teller API app :<br>
+      Using 'Random Joke API' with 'VoiceRSS' to AI makes a joke with 'Tell Me a Joke' button.<br>
+      The button stops functioning while joke is on going.<br>
+      <a href="https://hsprime85.github.io/JS_JokeTeller_project/" target="_blank"><i class="fas fa-laptop"></i>&nbsp;&nbsp;DEMO</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hsprime85/JS_JokeTeller_project" target="_blank"><i class="fab fa-github"></i>  &nbsp;&nbsp;CODE</a>
+    </p>
+</div>
+
+
+    </section>
+
+    <footer class="footer" id="footer" data-aos="fade-in" data-aos-delay="650">
+      <div class="footer_container">
+        <h2 class="footer_title"><span>var</span> contact_me &nbsp;=&nbsp;&nbsp;</h2>
+          <div class="icons">
+            <a href="mailto:hsprime@gmail.com" target="_blank"> <i class="fas fa-at"></i></a> 
+            <a href="https://github.com/hsprime85" target="_blank"><i class="fab fa-github"></i>
+            <a href="https://www.linkedin.com/in/hsprime85/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
